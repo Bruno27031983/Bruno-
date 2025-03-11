@@ -7,14 +7,18 @@
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#4CAF50">
   
-  <!-- Načítanie písma Roboto z Google Fonts (externá knižnica) -->
+  <!-- Načítanie písma Roboto z Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap&subset=latin-ext" rel="stylesheet">
   
+  <!-- Firebase knižnice -->
   <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+  
+  <!-- jsPDF knižnice -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.15/jspdf.plugin.autotable.min.js"></script>
+  
   <style>
     /* Použitie písma Roboto */
     body { 
@@ -79,6 +83,7 @@
   </style>
 </head>
 <body>
+  <!-- Prihlasovací formulár -->
   <div id="auth-container">
     <h1>Prihlásenie / Registrácia</h1>
     <div id="auth-message">Žiadny používateľ nie je prihlásený.</div>
@@ -95,6 +100,7 @@
     <button onclick="logout()">Odhlásiť sa</button>
   </div>
 
+  <!-- Kalkulačka -->
   <div id="calculator-container" class="container" style="display:none;">
     <div class="autor-info">Vytvoril a financoval Bruno</div>
     <h1 id="mainTitle">Bruno's Calculator</h1>
@@ -179,12 +185,12 @@
   <script>
     // Firebase konfigurácia
     const firebaseConfig = {
-      apiKey: "AIzaSyDWFiWPldB7aWPIuFhAmriAm_DR38rndIo",
-      authDomain: "bruno-3cee2.firebaseapp.com",
-      projectId: "bruno-3cee2",
-      storageBucket: "bruno-3cee2.firebasestorage.app",
-      messagingSenderId: "155545319308",
-      appId: "1:155545319308:web:5da498ff1cd3e1833888a9"
+    apiKey: "AIzaSyCioCUVVX2ghdk0Mz7o3MW8cdM-TzII7pU",
+  authDomain: "bitka-ecd3f.firebaseapp.com",
+  projectId: "bitka-ecd3f",
+  storageBucket: "bitka-ecd3f.firebasestorage.app",
+  messagingSenderId: "909279294707",
+  appId: "1:909279294707:web:d4c6e462a8498d2707b386",
     };
 
     firebase.initializeApp(firebaseConfig);
